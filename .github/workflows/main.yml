@@ -19,3 +19,5 @@ jobs:
           username: ${{ secrets.GOKERTECH }}
           password: ${{ secrets.GOKERTECH }}
           server-dir: /htdocs/
+          protocol: ftp
+          port: 21
