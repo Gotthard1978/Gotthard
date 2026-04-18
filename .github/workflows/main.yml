@@ -3,19 +3,18 @@ name: FTP Deployment
 on:
   push:
     branches:
-      - main
+      - main  # WICHTIG: Prüfe, ob dein Branch wirklich 'main' heißt (sonst 'master')
 
 jobs:
   web-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
+      - name: 🚚 Code auschecken
         uses: actions/checkout@v4
 
-      - name: 📂 Sync files via FTP
+      - name: 📂 FTP Upload
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          # Greift auf Settings > Secrets and variables > Actions > Secrets zu
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
