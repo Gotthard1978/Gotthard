@@ -18,6 +18,6 @@ jobs:
           server: ftp.gokertech.at
           username: gokertech
           password: Phah2eeD
-          server-dir: ./public_html/
+          server-dir: ftp://ftp.gokertech.at/public_html/
           protocol: ftp
           port: 21
