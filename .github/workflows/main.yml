@@ -16,8 +16,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.gokertech.at
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: gokertech
+          password: Phah2eeD
           server-dir: /public_html/
           protocol: ftp
           port: 21
