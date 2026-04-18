@@ -16,6 +16,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.GOKERTECH }}
-          username: ${{ secrets.GOKERTECH.FTP_USERNAME }}
-          password: ${{ secrets.GOKERTECH.FTP_PASSWORD }}
+          username: ${{ secrets.GOKERTECH }}
+          password: ${{ secrets.GOKERTECH }}
           server-dir: /htdocs/
