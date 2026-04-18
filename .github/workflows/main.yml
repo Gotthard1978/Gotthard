@@ -18,6 +18,6 @@ jobs:
           server: ftp.gokertech.at
           username: ${{ secrets.GOKERTECH }}
           password: ${{ secrets.GOKERTECH }}
-          server-dir: /htdocs/
+          server-dir: /public_html/
           protocol: ftp
           port: 21
