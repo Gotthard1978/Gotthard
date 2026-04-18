@@ -15,7 +15,7 @@ jobs:
       - name: 📂 Sync files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.GOKERTECH.FTP_SERVER }}
+          server: ${{ secrets.GOKERTECH }}
           username: ${{ secrets.GOKERTECH.FTP_USERNAME }}
           password: ${{ secrets.GOKERTECH.FTP_PASSWORD }}
           server-dir: /htdocs/
